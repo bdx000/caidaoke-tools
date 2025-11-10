@@ -1,0 +1,19 @@
+{
+    "name": "caidaoke/tools",
+    "description": "common tools",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Caidaoke\\Tools\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bdx000",
+            "email": "nickok@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
