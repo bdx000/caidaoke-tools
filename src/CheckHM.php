@@ -1,5 +1,5 @@
 <?php
-namespace Caidaoke\Tools;
+namespace Caidaoke;
 class CheckHM{ 
     //  检查MAC地址:00.00.00.00.00.00
     static public function mac(string $mac, string $separator='.'){

@@ -1,5 +1,5 @@
 <?php
-namespace Caidaoke\Tools;
+namespace Caidaoke;
 
 class JsonResponse{
     public $msg     = ''; //消息信息
