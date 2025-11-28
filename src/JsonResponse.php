@@ -9,16 +9,16 @@ class JsonResponse{
     public function  setCode($code){
         switch ($code){
             case 0:
-                $this->msg  = '成功';
+                $this->msg  = 'success';
                 break;
             case 1:
-                $this->msg  = '参数错误';
+                $this->msg  = 'param error';
                 break;
             case 2:
-                $this->msg  = '登录失败';
+                $this->msg  = 'login error';
                 break;
             case 3:
-                $this->msg  = '数据为空';
+                $this->msg  = 'data error';
                 break;
             case 4:
                 $this->msg  = 'upload error';
