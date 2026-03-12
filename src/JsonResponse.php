@@ -1,6 +1,5 @@
 <?php
 namespace Caidaoke;
-
 class JsonResponse{
     public $msg     = ''; //消息信息
     public $data    = []; //返回的数据
@@ -9,28 +8,31 @@ class JsonResponse{
     public function  setCode($code){
         switch ($code){
             case 0:
-                $this->msg  = 'success';
+                $this->msg  = '成功';
                 break;
-            case 1:
-                $this->msg  = 'param error';
+            case 100:
+                $this->msg  = '参数错误';
                 break;
-            case 2:
-                $this->msg  = 'login error';
+            case 101:
+                $this->msg  = '签名错误';
                 break;
-            case 3:
-                $this->msg  = 'data error';
+            case 300:
+                $this->msg  = '登录失败';
                 break;
-            case 4:
-                $this->msg  = 'upload error';
+            case 301:
+                $this->msg  = '数据库错误';
                 break;
-            case 5:
-                $this->msg  = 'sign error';
+            case 302:
+                $this->msg  = '保存错误';
                 break;
-            case 6:
-                $this->msg  = 'save error';
+            case 303:
+                $this->msg  = '数据不存在';
+                break;
+            case 400:
+                $this->msg  = '上传错误';
                 break;
             default:
-                $this->msg  = "fail";
+                $this->msg  = "系统错误";
         }
         $this->code = $code;
     }
