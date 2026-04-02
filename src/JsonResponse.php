@@ -37,6 +37,9 @@ class JsonResponse{
             case 501:
                 $this->msg  = '设备未注册';
                 break;
+            case 502:
+                $this->msg  = '消息下发失败';
+                break;
             default:
                 $this->msg  = "系统错误";
         }
