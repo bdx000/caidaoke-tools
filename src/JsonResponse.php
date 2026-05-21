@@ -41,6 +41,7 @@ class JsonResponse{
             case 4000:
                 $this->msg  = '上传错误';
                 break;
+            //物联网相关
             case 500:
             case 5000:
                 $this->msg  = '设备不在线';
@@ -52,6 +53,10 @@ class JsonResponse{
             case 502:
             case 5002:
                 $this->msg  = '消息下发失败';
+                break;
+            //对象存储相关
+            case 6001:
+                $this->msg  = '删除错误';
                 break;
             default:
                 $this->msg  = "系统错误";
