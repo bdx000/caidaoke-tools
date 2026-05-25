@@ -54,6 +54,9 @@ class JsonResponse{
             case 5002:
                 $this->msg  = '消息下发失败';
                 break;
+            case 5003:
+                $this->msg  = '设备不存在';
+                break;
             //对象存储相关
             case 6001:
                 $this->msg  = '删除错误';
