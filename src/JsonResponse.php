@@ -65,15 +65,20 @@ class JsonResponse{
                 $this->msg  = "系统错误";
         }
         $this->code = $code;
+        return $this;
+
     }
 
     public function setMsg($msg){
         $this->msg  = $msg;
+        return $this;
     }
     public function setData(array $data){
         $this->data = array_merge($this->data,$data);
+        return $this;
     }
     public function setDataString($str){
         $this->data = $str;
+        return $this;
     }
 }
