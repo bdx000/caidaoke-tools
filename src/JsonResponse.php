@@ -8,7 +8,7 @@ class JsonResponse{
     public $data    = []; //返回的数据
     public $code    = 0;  //code为0是正常
 
-    public function  setCode($code){
+    public function  setCode(int $code){
         switch ($code){
             case 0:
                 $this->msg  = '成功';
@@ -20,6 +20,21 @@ class JsonResponse{
             case 101:
             case 1001:
                 $this->msg  = '签名错误';
+                break;
+            case 2000:
+                $this->msg  = '请求方式错误';
+                break;
+            case 2001:
+                $this->msg  = '只能使用post请求';
+                break;
+            case 2002:
+                $this->msg  = '只能使用get请求';
+                break;
+            case 2003:
+                $this->msg  = '只能使用put请求';
+                break;
+            case 2004:
+                $this->msg  = '只能使用delete请求';
                 break;
             case 300:
             case 3000:
